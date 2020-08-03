@@ -2,7 +2,17 @@
   <v-container>
     <v-row>
       <v-col cols="12">
-        <TheHeadingTitle title="Card Hover Effect 01"/>
+        <TheHeadingTitle title="Developing Card" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col md="3" v-for="item in card_example" :key="item.title">
+        <KCard03 :img-url="item.url" :img-title="item.title" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <TheHeadingTitle title="KCard 01" />
       </v-col>
     </v-row>
     <v-row>
@@ -12,12 +22,22 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-          <TheHeadingTitle title="Card Hover Effect 02" />
+        <TheHeadingTitle title="KCard 02" />
       </v-col>
     </v-row>
     <v-row>
       <v-col md="3" v-for="item in card_example" :key="item.title">
         <KCard02 :img-url="item.url" :img-title="item.title" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <TheHeadingTitle title="KCard 03" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col md="3" v-for="item in card_example" :key="item.title">
+        <KCard03 :img-url="item.url" :img-title="item.title" />
       </v-col>
     </v-row>
   </v-container>
@@ -26,40 +46,42 @@
 <script>
 import KCard01 from "../components/KCard01";
 import KCard02 from "../components/KCard02";
-import TheHeadingTitle from "../components/TheHeadingTitle"
+import KCard03 from "../components/KCard03";
+import TheHeadingTitle from "../components/TheHeadingTitle";
 
 export default {
   name: "card",
-    components: {
+  components: {
     KCard01,
     KCard02,
-    TheHeadingTitle,
+    KCard03,
+    TheHeadingTitle
   },
   data() {
     return {
       card_example: [
         {
           url:
-            "https://th-test-11.slatic.net/p/6932df14abb539d76b9dc01edaf5e8f9.jpg_340x340q80.jpg_.webp",
-          title: "Product1"
+            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+          title: "Title1"
         },
         {
           url:
-            "https://th-test-11.slatic.net/p/6932df14abb539d76b9dc01edaf5e8f9.jpg_340x340q80.jpg_.webp",
-          title: "Product2"
+            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+          title: "Title2"
         },
         {
           url:
-            "https://th-test-11.slatic.net/p/6932df14abb539d76b9dc01edaf5e8f9.jpg_340x340q80.jpg_.webp",
-          title: "Product3"
+            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+          title: "Title3"
         },
         {
           url:
-            "https://th-test-11.slatic.net/p/6932df14abb539d76b9dc01edaf5e8f9.jpg_340x340q80.jpg_.webp",
-          title: "Product4"
+            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+          title: "Title4"
         }
       ]
     };
-  },
+  }
 };
 </script>
