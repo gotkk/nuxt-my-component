@@ -42,6 +42,8 @@ $k-box-shadow-01: 0px 2px 2px 0px rgba(117, 117, 117, 0.5),
 .k-img {
   height: auto;
   max-width: 100%;
+  cursor: pointer;
+  background-color: #ffffff;
 }
 .k-content-block {
   display: flex;

@@ -62,22 +62,22 @@ export default {
       card_example: [
         {
           url:
-            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+            "https://www.wallofsharing.com/wp-content/uploads/2019/10/kmitl_logo.png",
           title: "Title1"
         },
         {
           url:
-            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+            "https://www.wallofsharing.com/wp-content/uploads/2019/10/kmitl_logo.png",
           title: "Title2"
         },
         {
           url:
-            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+            "https://www.wallofsharing.com/wp-content/uploads/2019/10/kmitl_logo.png",
           title: "Title3"
         },
         {
           url:
-            "https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_kmitl.png",
+            "https://www.wallofsharing.com/wp-content/uploads/2019/10/kmitl_logo.png",
           title: "Title4"
         }
       ]

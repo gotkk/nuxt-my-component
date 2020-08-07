@@ -58,6 +58,7 @@ $k-card-02-transition: 0.7s;
 .k-card-02 .k-img {
   max-width: 100%;
   height: auto;
+  background-color: #ffffff;
 }
 .k-card-02 .k-text {
   color: #ffffff;
