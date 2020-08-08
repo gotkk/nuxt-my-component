@@ -15,7 +15,7 @@ export default {
   props: {
     imgUrl: {
       type: String,
-      default: "../assets/1.jpg"
+      default: "_nuxt/assets/icon.png"
     },
     imgTitle: {
       type: String,
@@ -50,7 +50,6 @@ $k-box-shadow-01: 0px 2px 2px 0px rgba(117, 117, 117, 0.5),
 .k-img {
   max-width: 100%;
   height: auto;
-  cursor: pointer;
 }
 .k-content-block {
   display: flex;

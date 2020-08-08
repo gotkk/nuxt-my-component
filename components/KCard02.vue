@@ -15,7 +15,7 @@ export default {
   props: {
     imgUrl: {
       type: String,
-      default: "../assets/1.jpg"
+      default: "_nuxt/assets/icon.png"
     },
     imgTitle: {
       type: String,

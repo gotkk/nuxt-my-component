@@ -46,7 +46,7 @@ export default {
                   text: "Cancel"
               },
               {
-                  text: "Get Start"
+                  text: "KButton"
               },
           ]
       }

@@ -3,7 +3,7 @@
     <div class="k-img-block">
       <img :src="imgUrl" class="k-img" :alt="imgTitle" />
     </div>
-    <div class="k-title-block">
+    <div class="k-content-block">
       <span class="k-text">{{ imgTitle }}</span>
     </div>
   </div>
@@ -15,7 +15,7 @@ export default {
   props: {
     imgUrl: {
       type: String,
-      default: "../assets/1.jpg"
+      default: "_nuxt/assets/icon.png"
     },
     imgTitle: {
       type: String,
@@ -68,8 +68,7 @@ $k-card-01-transition: 0.3s;
   color: #ffffff;
   font-size: 20px;
 }
-
-.k-title-block {
+.k-content-block {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -81,7 +80,7 @@ $k-card-01-transition: 0.3s;
   z-index: 1;
   transition: $k-card-01-transition;
 }
-.k-title-block:hover {
+.k-content-block:hover {
   opacity: 0;
 }
 </style>

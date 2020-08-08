@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col md="3" v-for="item in card_example" :key="item.title">
-        <KCard04 :img-url="item.url" :img-title="item.title" />
+        <KCard05 :img-url="item.url" :img-title="item.title" />
       </v-col>
     </v-row>
     <v-row>
@@ -50,6 +50,16 @@
         <KCard04 :img-url="item.url" :img-title="item.title" />
       </v-col>
     </v-row>
+    <v-row>
+      <v-col cols="12">
+        <TheHeadingTitle title="KCard 05" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col md="3" v-for="item in card_example" :key="item.title">
+        <KCard05 :img-url="item.url" :img-title="item.title" />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -58,6 +68,7 @@ import KCard01 from "../components/KCard01";
 import KCard02 from "../components/KCard02";
 import KCard03 from "../components/KCard03";
 import KCard04 from "../components/KCard04";
+import KCard05 from "../components/KCard05";
 import TheHeadingTitle from "../components/TheHeadingTitle";
 
 export default {
@@ -67,6 +78,7 @@ export default {
     KCard02,
     KCard03,
     KCard04,
+    KCard05,
     TheHeadingTitle
   },
   data() {
