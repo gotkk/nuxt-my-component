@@ -1,10 +1,12 @@
 <template>
-    <div class="k-card-02">
+  <div class="k-card-02">
+    <div class="k-img-block">
       <img :src="imgUrl" class="k-img" :alt="imgTitle" />
-      <div class="k-back-content-block">
-        <span class="k-text">{{ imgTitle }}</span>
-      </div>
     </div>
+    <div class="k-back-content-block">
+      <span class="k-text">{{ imgTitle }}</span>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -25,19 +27,20 @@ export default {
 
 <style lang="scss" scoped>
 $k-card-02-transition: 0.7s;
+$k-box-shadow-01: 0px 2px 2px 0px rgba(117, 117, 117, 0.5),
+  0px 1px 2px 0px rgba(117, 117, 117, 0.5);
 
 .k-card-02 {
-  display: flex;
   width: 100%;
-  transition: $k-card-02-transition;
   position: relative;
   cursor: pointer;
+  transition: $k-card-02-transition;
 }
 .k-card-02:hover {
   transform: rotateY(180deg);
   transition: $k-card-02-transition;
 }
-.k-card-02 .k-back-content-block {
+.k-back-content-block {
   transform: rotateY(180deg);
   position: absolute;
   width: 100%;
@@ -51,16 +54,22 @@ $k-card-02-transition: 0.7s;
   opacity: 0;
   font-size: 20px;
 }
-.k-card-02 .k-back-content-block:hover {
+.k-back-content-block:hover {
   opacity: 1;
   transition: $k-card-02-transition;
 }
-.k-card-02 .k-img {
+.k-img-block {
+  width: 100%;
+  height: auto;
+  padding: 6px;
+  background-color: #ffffff;
+  box-shadow: $k-box-shadow-01;
+}
+.k-img {
   max-width: 100%;
   height: auto;
-  background-color: #ffffff;
 }
-.k-card-02 .k-text {
+.k-text {
   color: #ffffff;
 }
 </style>

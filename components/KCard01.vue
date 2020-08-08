@@ -1,6 +1,8 @@
 <template>
   <div class="k-card-01">
-    <img :src="imgUrl" class="k-img" :alt="imgTitle" />
+    <div class="k-img-block">
+      <img :src="imgUrl" class="k-img" :alt="imgTitle" />
+    </div>
     <div class="k-title-block">
       <span class="k-text">{{ imgTitle }}</span>
     </div>
@@ -27,7 +29,6 @@ export default {
 $k-card-01-transition: 0.3s;
 
 .k-card-01 {
-  display: flex;
   width: 100%;
   position: relative;
   cursor: pointer;
@@ -53,17 +54,22 @@ $k-card-01-transition: 0.3s;
   // box-shadow: 0 0 10px 6px #3a3a3a;
   // transform: scale(1.05);
 }
-
-.k-card-01 .k-img {
-  max-width: 100%;
+.k-img-block{
+  width: 100%;
   height: auto;
+  padding: 6px;
   background-color: #ffffff;
 }
-.k-card-01 .k-text {
+.k-img {
+  max-width: 100%;
+  height: auto;
+}
+.k-text {
   color: #ffffff;
+  font-size: 20px;
 }
 
-.k-card-01 .k-title-block {
+.k-title-block {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -74,9 +80,8 @@ $k-card-01-transition: 0.3s;
   align-items: center;
   z-index: 1;
   transition: $k-card-01-transition;
-  font-size: 20px;
 }
-.k-card-01 .k-title-block:hover {
+.k-title-block:hover {
   opacity: 0;
 }
 </style>

@@ -28,7 +28,7 @@ import TheHeadingTitle from "../components/TheHeadingTitle";
 import KButton01 from '../components/KButton01';
 
 export default {
-  name: "button",
+  name: "KButton",
   components: {
       TheHeadingTitle,
       KButton01,
@@ -37,16 +37,16 @@ export default {
       return {
           button_example: [
               {
-                  text: "Button1"
+                  text: "OK"
               },
               {
-                  text: "Button2"
+                  text: "Submit"
               },
               {
-                  text: "Button3"
+                  text: "Cancel"
               },
               {
-                  text: "Button4"
+                  text: "Get Start"
               },
           ]
       }
@@ -58,6 +58,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
